@@ -5,9 +5,9 @@ const next = require('next')
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
-const port = process.env.port || 8080
+const port = process.env.port || 3000
 
-console.log(port)
+console.log(process.env.port)
 
 app.prepare().then(() => {
     createServer((req, res) => {
