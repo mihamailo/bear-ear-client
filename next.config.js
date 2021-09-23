@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   env: {
-    "BASE_URL": "https://bear-ear.herokuapp.com",
+    "BASE_URL": "45.12.19.108",
     "MONGODB_URL": "mongodb+srv://admin:admin@cluster0.qdmen.mongodb.net/bear-ear-dataBase?retryWrites=true&w=majority",
     "ACCESS_TOKEN_SECRET": "YOUR_ACCESS_TOKEN_SECRET",
     "REFRESH_TOKEN_SECRET": "YOUR_REFRESH_TOKEN_SECRET",
