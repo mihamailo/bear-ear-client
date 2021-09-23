@@ -8,11 +8,12 @@ export const fetchTracks = () => {
     return async (dispatch: Dispatch<TrackAction>) => {
         try {
             const res = await axios.get(`${baseUrl}/tracks`)
-            console.log(baseUrl);
-            console.log(res);
 
             dispatch({ type: TrackActionTypes.FETCH_TRACKS, payload: res.data })
         } catch (err) {
+            console.log(baseUrl)
+            console.log(err);
+
             dispatch({
                 type: TrackActionTypes.FETCH_TRACKS_ERROR,
                 payload: 'Error loading'
