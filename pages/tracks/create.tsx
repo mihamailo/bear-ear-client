@@ -28,7 +28,7 @@ function Create() {
             formData.append('artist', artist.value)
             formData.append('image', image)
             formData.append('audio', audio)
-            axios.post(`${baseUrl}/tracks`, formData)
+            axios.post(`${baseUrl}/tracks/create`, formData)
                 .then(res => router.push('/tracks'))
                 .catch(err => console.error(err))
         }
